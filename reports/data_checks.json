@@ -1,0 +1,79 @@
+{
+  "leaking_column": {
+    "present": true,
+    "column": "loaves_in_closing_register",
+    "evidence": {
+      "column": "loaves_in_closing_register",
+      "corr": 0.99881,
+      "mae_vs_target": 3.938
+    }
+  },
+  "unit_mixup": {
+    "present": false,
+    "column": null,
+    "group_value": null,
+    "factor": null,
+    "evidence": {
+      "max_group_median_ratio": 1.2340425531914894
+    }
+  },
+  "sentinel_value": {
+    "present": false,
+    "column": null,
+    "value": null,
+    "count": null
+  },
+  "duplicate_rows": {
+    "present": false,
+    "count": null,
+    "evidence": {
+      "full_row": 0,
+      "ignoring_record_id": 0
+    }
+  },
+  "stuck_sensor": {
+    "present": true,
+    "column": "shelf_hours",
+    "start_date": "2026-03-04",
+    "end_date": "2026-03-22",
+    "evidence": {
+      "stuck_value": 9.5
+    }
+  },
+  "target_typos": {
+    "present": false,
+    "count": null,
+    "evidence": {
+      "max_target": 606.0,
+      "median_target": 284.0,
+      "largest_gap_ratio_in_top_10pct": 1.08
+    }
+  },
+  "spelling_variants": {
+    "present": true,
+    "column": "day_type",
+    "true_levels": 2,
+    "evidence": {
+      "raw_levels": 17,
+      "spellings": [
+        " festival",
+        " weekday",
+        " weekend",
+        "FESTIVAL",
+        "Festival",
+        "WEEKDAY",
+        "WEEKEND",
+        "Weekday",
+        "Weekend",
+        "fes.",
+        "festival",
+        "festival ",
+        "wee.",
+        "weekday",
+        "weekday ",
+        "weekend",
+        "weekend "
+      ]
+    }
+  }
+}
